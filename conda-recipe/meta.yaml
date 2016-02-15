@@ -1,0 +1,23 @@
+package:
+    name: dummypkg
+    version: 0.1.0
+
+source:
+    path: ../
+
+
+requirements:
+    build:
+        - python
+    run:
+        - python
+
+test:
+    imports:
+      - dummypkg
+      - dummypkg.core
+
+about:
+    home: https://github.com/bjodah/dummypkg
+    license: BSD
+    summary: Dummy package
